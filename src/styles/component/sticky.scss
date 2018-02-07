@@ -1,0 +1,118 @@
+@import '../var';
+#sticky {
+    position: relative;
+    .sticky_content {
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    ul {
+        margin: 0 auto;
+        transition: all 0.3s;
+        li {
+            display: inline-block;
+        }
+        .item-img {
+            margin-right: 20px;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            background-color: $color_offwhite;
+            display: inline-block;
+            text-align: center;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+        .item-content {
+            margin-left: 20px;
+            vertical-align: top;
+            width: 480px;
+            display: inline-block;
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                line-height: 1.4em;
+                color: $color_font_navy;
+            }
+            p {
+                font-size: 16px;
+                color: $color_font_gray;
+                line-height: 1.4em;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .turn {
+        font-size: 60px;
+        color: $color_offwhite;
+        a {
+        	color: $color_offwhite;
+            position: absolute;
+            &:hover {
+                color: $color_font_gray;
+            }
+            width: 90px;
+            top: 0%;
+            height: 100%;
+            line-height: 100%;
+
+            &:before{
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform:translateY(-50%);
+            }
+            // transform: translateY(-50%);
+            &.icon_left {
+                left: 0;
+            }
+            &.icon_right {
+                right: 0;
+                &:before{
+				position: absolute;
+				left: auto;
+				right: 0;
+				top: 50%;
+				transform:translateY(-50%);
+            }
+            }
+        }
+    }
+    .point {
+        position: absolute;
+        bottom: 0px;
+        height: 30px;
+        left: 25%;
+        display: table;
+        transform: translateX(-50%);
+        a {
+            line-height: 30px;
+            position: relative;
+            width: 25px;
+            height: 30px;
+            display: inline-block;
+            transition: all 0.3s;
+            &:after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $color_offwhite;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background: none;
+                border: 1px solid $color_green;
+                transform: translate(-50%, -50%);
+            }
+            box-sizing:border-box;
+            &:hover:after,
+            &.active:after {
+                
+               background-color: #FFF;
+            }
+        }
+    }
+}

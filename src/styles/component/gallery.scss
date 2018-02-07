@@ -1,0 +1,93 @@
+@import '../var';
+.gallery {
+    display: none;
+}
+
+.mygallery {
+    width: 1000px;
+    height: 620px;
+    overflow: hidden;
+    margin: 15px auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px $color_font_navy;
+    position: relative;
+    ul{
+    	transition: all .5s;
+    }
+    ul li {
+        float: left;
+        width: 1000px;
+        height: 600px;
+        background-color: $color_offwhite;
+        img {
+            width: 100%;
+            height: auto;
+            min-height:100%;
+        }
+    }
+    .point {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1000px;
+        height: 20px;
+        background-color: #fff;
+        &>a {
+            background-color: rgba(0,0,0,.6);
+            border-right: 1px solid #eee;
+            position: relative;
+            transition: all 0.3s;
+            cursor: pointer;
+            &:last-child {
+                border-right: 0;
+            }
+            img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+                opacity: .2;
+                transition: all 0.3s;
+            }
+            &.active{
+            	background-color: $color_green;
+				img{
+					top: 20px;
+				}
+            }
+            &:hover {
+                background-color: #fff;
+                img {
+                	display: block;
+                    top: -50px;
+                    opacity:1;
+                }
+            }
+        }
+    }
+    a.mygallery_left,
+    a.mygallery_right {
+        position: absolute;
+        height: 600px;
+        width: 50px;
+        line-height: 600px;
+        top: 0%;
+        left: 0;
+        font-size: 40px;
+        color: $color_font_navy;
+        transition: all 0.4s;
+
+        text-align: center;
+        z-index: 10;
+
+        &:hover {
+            color: $color_green;
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+    a.mygallery_right {
+        left: auto;
+        right: 0;
+    }
+}

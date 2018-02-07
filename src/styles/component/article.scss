@@ -1,0 +1,38 @@
+@import '../var';
+.detail{
+	width: 1000px;
+	margin: 30px auto;
+	h1{
+		font-size: 24px;
+		padding: 10px 0;
+	}
+	.source{
+		padding: 10px 0;
+		color:$color_font_gray;
+	}
+	img{
+		max-width: 100%;
+	}
+	.description{
+		padding:20px;
+		box-sizing:border-box;
+		font-size: 14px;
+		color:$color_font_gray;
+		border:1px solid $color_offwhite;
+		line-height: 1.4em;
+		margin: 10px auto;
+	}
+	.content{
+		p,span{
+			color:#000;
+			font-size: 16px;
+			line-height: 1.4em;
+		}
+		a{
+			color:$c_blue;
+		}
+		p{
+			margin-bottom: 15px;
+		}
+	}
+}

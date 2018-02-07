@@ -1,0 +1,87 @@
+/*
+** 头部导航样式
+** 杜连强
+*/
+
+
+@import 'var';
+@import 'font';
+#nav {
+    width: 100%;
+    height: $header_height;
+    line-height: $header_height;
+    background-color: $c_black;
+    position: relative;
+    .primary {
+        width: 1000px;
+        margin: 0 auto;
+        height: $header_height;
+        overflow: hidden;
+        li {
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+        }
+        a {
+            font-family: 'nav';
+            color: #fff;
+            display: block;
+            i {
+                font-size: 80%;
+                font-style: italic;
+                word-wrap: break-word;
+                height: 10px;
+                line-height: 40px;
+                display: block;
+                color: #777;
+            }
+            &.active,&:hover {
+                background-color: $c_purple;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .sencondary {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: rgba(255,255,255,.9);
+        position: absolute;
+        top: $header_height;
+        left: 0;
+        border-bottom: 1px solid lighten($c_purple,30%);
+        display: none;
+        ul {
+            display: none;
+            margin: 0 auto;
+            width:1000px;
+        }
+       
+        li {
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+        }
+        a {
+            color: #333;
+            display: block;
+            font-size: 14px;
+            i {
+                font-size: 80%;
+                font-style: italic;
+                color: #777;
+                display: none;
+            }
+            &.active {
+            	color: #fff;
+                background-color: $c_purple;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

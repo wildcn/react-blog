@@ -1,0 +1,82 @@
+
+// 页脚
+.footer {
+    width: 1180px;
+    margin:  0 auto;
+    padding:20px 0;
+    &,
+    a {
+        color: #999;
+        font-size: 14px;
+    }
+    .friendlink {
+        display: table;
+        margin: 0 auto;
+        h3 {
+            font-weight: bold;
+            display: inline-block;
+        }
+        h3,
+        a {
+            display: inline-block;
+            vertical-align: top;
+            padding: 5px 10px;
+            position: relative;
+        }
+        a {
+            &:last-child:after {
+                display: none;
+            }
+            &:after {
+                width: 1px;
+                height: 1em;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                background-color: #999;
+            }
+        }
+    }
+    a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+    .footer-nav {
+        display: table;
+        margin: 0 auto;
+        h3,
+        a {
+            display: inline-block;
+            vertical-align: top;
+            padding: 5px 10px;
+            position: relative;
+        }
+        a {
+            &:last-child:after {
+                display: none;
+            }
+            &:after {
+                width: 1px;
+                height: 1em;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                background-color: #999;
+            }
+        }
+    }
+    .fz14 {
+        margin: 10px 0;
+    }
+    .fz12 {
+        margin: 5px 0;;
+        &,
+        a {
+            font-size: 12px;
+        }
+    }
+}

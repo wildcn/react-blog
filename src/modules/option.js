@@ -1,0 +1,26 @@
+export default {
+	staticUrl:false,
+	layout:{
+		primary:{
+			main:'1180px',
+			content:'1000px',
+			listflow:{
+				liWidth:320,
+				liHeight:400
+			},
+			chief:'750px',
+			extra:'400px'
+		},
+		smaller:{
+			main:'960px',
+			content:'960px',
+			chief:'640px',
+			extra:'300px'
+		},
+		mobile:{
+			main:'100%',
+			chief:'100%',
+			extra:'100%'
+		}
+	}
+}

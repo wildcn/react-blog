@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fblady</title>
+    <style>
+    /*声明 WebFont*/
+
+    @font-face {
+        font-family: 'pinghei';
+        src: url('./方正书宋简体.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*使用选择器指定字体*/
+
+    * {
+        font-family: 'pinghei';
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="primary">
+            <ul>
+                <li id="b_0"><a class="active active" name="首页" href="/"><i class="path">HOME</i><!-- react-text: 10 -->首页<!-- /react-text --></a></li>
+                <li id="b_9"><a class="" name="热点" href="/news/9"><i class="path">PC</i><!-- react-text: 14 -->热点<!-- /react-text --></a></li>
+                <li id="b_1"><a class="" name="美容" href="/news/1"><i class="path">BEAUTY</i><!-- react-text: 18 -->美容<!-- /react-text --></a></li>
+                <li id="b_2"><a class="" name="时尚" href="/news/2"><i class="path">FASHION</i><!-- react-text: 22 -->时尚<!-- /react-text --></a></li>
+                <li id="b_3"><a class="" name="奢华" href="/news/3"><i class="path">LUXURY</i><!-- react-text: 26 -->奢华<!-- /react-text --></a></li>
+                <li id="b_4"><a class="" name="生活" href="/news/4"><i class="path">LIFE</i><!-- react-text: 30 -->生活<!-- /react-text --></a></li>
+                <li id="b_16"><a class="" name="亲子" href="/news/16"><i class="path">BABY</i><!-- react-text: 34 -->亲子<!-- /react-text --></a></li>
+                <li id="b_19"><a class="" name="公益" href="/news/19"><i class="path">GONGYI</i><!-- react-text: 38 -->公益<!-- /react-text --></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="h1-title">
+        美容 图片 Cosmetology
+        export const getNewsClass = {
+    "code": 0,
+    "result": [{
+        "bclass": {
+            "bclassname": "热点",
+            "bclassid": "9",
+            "bclasspath": "pc",
+            "arr": [
+                "",
+                "28",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "资讯",
+            "classpath": "pc/news",
+            "classid": "28",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "美容",
+            "bclassid": "1",
+            "bclasspath": "beauty",
+            "arr": [
+                "",
+                "6",
+                "7",
+                "8",
+                "10",
+                "13",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "美发",
+            "classpath": "beauty/hairstyle",
+            "classid": "6",
+            "tbname": "news"
+        }, {
+            "classname": "护肤",
+            "classpath": "beauty/skin",
+            "classid": "7",
+            "tbname": "news"
+        }, {
+            "classname": "彩妆",
+            "classpath": "beauty/makeup",
+            "classid": "8",
+            "tbname": "news"
+        }, {
+            "classname": "评测",
+            "classpath": "beauty/pc",
+            "classid": "10",
+            "tbname": "news"
+        }, {
+            "classname": "问答",
+            "classpath": "beauty/ask",
+            "classid": "13",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "时尚",
+            "bclassid": "2",
+            "bclasspath": "fashion",
+            "arr": [
+                "",
+                "5",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "流行搭配",
+            "classpath": "fashion/style",
+            "classid": "5",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "奢华",
+            "bclassid": "3",
+            "bclasspath": "luxury",
+            "arr": [
+                "",
+                "12",
+                "15",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "珠宝",
+            "classpath": "luxury/jewelry",
+            "classid": "12",
+            "tbname": "news"
+        }, {
+            "classname": "酒店",
+            "classpath": "luxury/hotel",
+            "classid": "15",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "生活",
+            "bclassid": "4",
+            "bclasspath": "life",
+            "arr": [
+                "",
+                "11",
+                "18",
+                "21",
+                "22",
+                "24",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "娱乐",
+            "classpath": "life/ent",
+            "classid": "11",
+            "tbname": "news"
+        }, {
+            "classname": "财经",
+            "classpath": "life/finance",
+            "classid": "18",
+            "tbname": "news"
+        }, {
+            "classname": "科技",
+            "classpath": "life/tech",
+            "classid": "21",
+            "tbname": "news"
+        }, {
+            "classname": "房产",
+            "classpath": "life/fang",
+            "classid": "22",
+            "tbname": "news"
+        }, {
+            "classname": "健康",
+            "classpath": "life/jiankang",
+            "classid": "24",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "亲子",
+            "bclassid": "16",
+            "bclasspath": "baby",
+            "arr": [
+                "",
+                "17",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "母婴热点",
+            "classpath": "baby/news",
+            "classid": "17",
+            "tbname": "news"
+        }]
+    }, {
+        "bclass": {
+            "bclassname": "公益",
+            "bclassid": "19",
+            "bclasspath": "gongyi",
+            "arr": [
+                "",
+                "20",
+                ""
+            ],
+            "tbname": "news"
+        },
+        "sonclass": [{
+            "classname": "公益动态",
+            "classpath": "gongyi/news",
+            "classid": "20",
+            "tbname": "news"
+        }]
+    }],
+    "info": "读取网站栏目成功！"
+};
+export const getHeadline= {
+    "code": 0,
+    "result": [
+        [
+            {
+                "title": "",
+                "titleurl": "/life/ent/2017-01-09/2385.html",
+                "username": "admin",
+                "titlepic": "/d/file/life/ent/2017-01-09/1eb4add74c41fb3ca9b23ec7fc0bd287.jpg",
+                "notimg": null,
+                "newstime": "2017-01-09",
+                "id": "2385",
+                "classid": "11",
+                "smalltext": "",
+                "classname": null,
+                "table": "news",
+                "classurl": "",
+                "page": 1,
+                "reptitle": "网易BoBo开启 2016年度盛典",
+                "onclick": "45",
+                "diggtop": null,
+                "diggdown": null,
+                "plnum": "0"
+            },
+            {
+                "title": "",
+                "titleurl": "/life/jiankang/2016-10-10/2346.html",
+                "username": "bianji",
+                "titlepic": "/d/file/life/jiankang/2016-10-10/small73997ef6ff87f08ad1f6177ff50aa94f1476107371.gif",
+                "notimg": null,
+                "newstime": "2016-10-10",
+                "id": "2346",
+                "classid": "24",
+                "smalltext": "",
+                "classname": null,
+                "table": "news",
+                "classurl": "",
+                "page": 1,
+                "reptitle": "春捂秋冻？不是哪儿都可以冻",
+                "onclick": "44",
+                "diggtop": null,
+                "diggdown": null,
+                "plnum": "0"
+            },
+            {
+                "title": "",
+                "titleurl": "/life/jiankang/2016-10-09/2345.html",
+                "username": "bianji",
+                "titlepic": "/d/file/life/jiankang/2016-10-09/a4eec9494d28f77ce2cad30b2de351bb.jpg",
+                "notimg": null,
+                "newstime": "2016-10-09",
+                "id": "2345",
+                "classid": "24",
+                "smalltext": "",
+                "classname": null,
+                "table": "news",
+                "classurl": "",
+                "page": 1,
+                "reptitle": "锻炼很重要！应针对自身情况",
+                "onclick": "45",
+                "diggtop": null,
+                "diggdown": null,
+                "plnum": "0"
+            },
+            {
+                "title": "",
+                "titleurl": "/life/jiankang/2016-09-28/2344.html",
+                "username": "bianji",
+                "titlepic": "/d/file/life/jiankang/2016-09-28/small07db879bfdba8dbcef323e59d12607241475066677.jpg",
+                "notimg": null,
+                "newstime": "2016-09-28",
+                "id": "2344",
+                "classid": "24",
+                "smalltext": "",
+                "classname": null,
+                "table": "news",
+                "classurl": "",
+                "page": 1,
+                "reptitle": "它是世界上最好的饮品，可惜",
+                "onclick": "39",
+                "diggtop": null,
+                "diggdown": null,
+                "plnum": "0"
+            }
+        ]
+    ],
+    "table": "news",
+    "total": "518",
+    "pageTotal": 0,
+    "pageIndex": 1,
+    "pageSize": null,
+    "info": "读取信息列表成功！"
+}
+export const InitScreen = {
+    max:{
+        width:1180
+    },
+    normal:{
+        width:960
+    }
+}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+webpackJsonp([7],{490:function(e,c,o){"use strict";function n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:t;switch(arguments[1].type){case r.FourPicOnClick:return console.log("News FourPicOnClick click"),console.log(e),e;default:return e}}Object.defineProperty(c,"__esModule",{value:!0});var i=o(120),r=(o.n(i),o(230)),t=o.i(i.fromJS)({FourPic:[]});c.default=n}});
+//# sourceMappingURL=7.9b31d2ef.chunk.js.map

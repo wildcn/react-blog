@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+** 后台css
+*/
+.custom-item {
+  width: 25%;
+  display: inline-block; }
+
+.custom-anli img {
+  border: 1px solid #bddff5;
+  margin: 0 10px 0 0; }
+
+.undis {
+  display: none; }
+
+.anli-upload {
+  margin: 10px 0 !important; }

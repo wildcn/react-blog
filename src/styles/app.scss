@@ -1,0 +1,74 @@
+/* CSS Document */
+@import 'var';
+@import 'common/normalize';
+@import 'common/iconfont';
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:none;font-family:Arial, "微软雅黑";}
+img{border:none;vertical-align:middle;}
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+input,textarea{-webkit-user-select:text;-ms-user-select:text;user-select:text;-webkit-appearance:none;font-size:1em;line-height:1.5em;}
+table{border-collapse:collapse;}
+input,select,textarea{outline:none;border:none;background:none;}
+a{outline:0;cursor:pointer;*star:expression(this.onbanner=this.blur());}
+a:link,a:active{text-decoration:none;}
+a:visited,a:link{text-decoration:none;}
+// a:hover{color:#f00;text-decoration:none;}
+a{text-decoration:none;-webkit-touch-callout:none;}
+em,i{font-style:normal;}
+li,ol{list-style:none;}
+.oh{overflow: hidden}
+.stop-scroll{
+	overflow-y: hidden!important;
+	height: 100%;
+}
+.noscroll{
+    overflow: hidden;
+    position: fixed;
+}
+.fixed{
+	position: fixed!important;
+}
+.red{color:#f00!important}
+html{background:#fff;}
+.clear{clear:both;height:0;font-size:0;line-height:0;visibility:hidden; overflow:hidden;} 
+.fl{float:left;}
+.fr{float:right;}
+html{height: 100%}
+body{ margin:0 auto;overflow-y: scroll; min-height:100%;}
+
+// custom
+.mt0{margin-top: 0 !important}
+.flex{display:flex;}
+.mb40{margin-bottom: 40px!important}
+.flex1{flex:1;}
+.br50{border-r··n: center}
+.tar{text-align: right}
+.tal{text-align: left}
+.dib{display: inline-block}
+.por{position: relative}
+.poa{position: absolute}
+.t0{top: 0}
+.r0{right: 0}
+.b0{bottom: 0}
+.l0{left: 0}
+.db{display: block!important}
+.blod{font-weight: bold}
+.dis{display:inline!important}
+.undis{display: none}
+.mb30{margin-bottom: 30px!important}
+.mb60{margin-bottom: 60px!important}
+.mt30{margin-top: 30px!important}
+.mt60{margin-top: 60px!important}
+.mt100{margin-top: 100px!important}
+.mr30{margin-right: 30px!important}
+.bgc000{background-color: #000}
+.m0a{margin: 0 auto}
+.bgfff{background:#fff}
+.fff{color:#fff}
+.tac{text-align: center}
+.bgc_black{background-color: $c_black}
+.bg-green{background-color:#00bfaf;}
+.bg-yellow{background-color:#ffad2d;}
+.bg-orange{background-color:#ff692c;}
+.h1red{font-size: 30px;color:#f00;font-style: italic}
+.button{padding:10px;font-size: 16px;color:$color_offwhite!important;background-color: $color_green;display: inline-block;border-radius:4px;margin:10px 0;&:hover{background-color: darken($color_green,10%);}}

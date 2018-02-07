@@ -1,0 +1,26 @@
+@import '../var';
+.quick_tools{
+	position: fixed;
+	right: 50%;
+	width: 50px;
+	transform:translateX(560px);
+	bottom: 10px;
+	a{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 30px;
+		color: #000;
+		background-color: rgba(255,255,255,.5);
+		display: block;
+		transition: all .3s;
+		border-radius:4px;
+		&:hover{
+			background-color: $color_green;
+		}
+		&.scroll_top{
+			display: none;
+		}
+	}
+}
