@@ -42,11 +42,7 @@ export default function createRoutes(store) {
           PageReducers: ['Home', 'Block/CommonNewsList'],
         }, cb, loadModule);
       },
-      // getChildRoutes(partialNextState, cb) {
-      //   import ('./modules').then((route) => { // eslint-disable-line
-      //     cb(null, route.default(loadComponent, loadModule));
-      //   });
-      // },
+     
     }, {
       path: '/category/:classid',
       name: 'category',
